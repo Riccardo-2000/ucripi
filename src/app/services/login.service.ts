@@ -38,7 +38,7 @@ export class LoginService {
       //se giusto memorizza con pass
       sessionStorage.setItem('user', username);
 
-      this.router.navigateByUrl("/home");
+      this.router.navigateByUrl("/lista");
     }
     else console.log("non funzionante")
   }
@@ -51,7 +51,6 @@ export class LoginService {
       this.router.navigateByUrl("/home");
     }
   }
-
 
   
   //registrazione

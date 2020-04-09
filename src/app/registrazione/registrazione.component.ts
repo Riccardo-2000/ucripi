@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
+import { FormBuilder, Validators, FormControl, FormGroup} from '@angular/forms';
 import { Router } from '@angular/router';
 import { LoginService } from '../services/login.service';
 
@@ -10,6 +10,7 @@ import { LoginService } from '../services/login.service';
 })
 export class RegistrazioneComponent implements OnInit {
 
+  
   signform:FormGroup;
 
   constructor(private datiUtenti:LoginService ,private fb: FormBuilder,private router: Router) {
@@ -31,5 +32,6 @@ export class RegistrazioneComponent implements OnInit {
   return(){
     this.router.navigateByUrl("/home");
   }
+
 
 }
