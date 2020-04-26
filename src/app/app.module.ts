@@ -9,6 +9,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListaComponent } from './lista/lista.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
+import { PesceComponent } from './pesce/pesce.component';
+import { UovaComponent } from './uova/uova.component';
+import { VinoComponent } from './vino/vino.component';
 
 
 @NgModule({
@@ -18,7 +21,10 @@ import { ContactComponent } from './contact/contact.component';
     RegistrazioneComponent,
     ListaComponent,
     BlogComponent,
-    ContactComponent
+    ContactComponent,
+    PesceComponent,
+    UovaComponent,
+    VinoComponent,
   ],
   imports: [
     BrowserModule,
