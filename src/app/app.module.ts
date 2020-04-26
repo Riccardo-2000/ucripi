@@ -8,6 +8,7 @@ import { RegistrazioneComponent } from './registrazione/registrazione.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListaComponent } from './lista/lista.component';
 import { BlogComponent } from './blog/blog.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { BlogComponent } from './blog/blog.component';
     HomeComponent,
     RegistrazioneComponent,
     ListaComponent,
-    BlogComponent
+    BlogComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
