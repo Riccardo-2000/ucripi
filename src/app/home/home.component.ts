@@ -5,16 +5,16 @@ import { LoginService } from '../services/login.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
 
   constructor(private listaUtenti: LoginService,private router: Router) { }
 
   login(username:string, password:string){
-    
+
     this.listaUtenti.eseguiLogin(username,password);
-    
+
   }
 
   loginS(username:string, password:string){
