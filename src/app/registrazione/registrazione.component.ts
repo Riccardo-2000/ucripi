@@ -30,7 +30,7 @@ export class RegistrazioneComponent implements OnInit {
     this.return();
   }
   return(){
-    this.router.navigateByUrl("/home");
+    this.router.navigateByUrl("/login");
   }
 
 

@@ -1,55 +1,26 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>LISTA</title>
-    
-  </head>
-  <body>
-    <div class="topnav">
-    <a class="active" href="/home">Logout</a>
-    <a href="#contact">Contact</a>
-  </div>
-    <h2>VERDURA</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>immagine</th>
-          <th>Nome</th>
-          <th>Prezzo</th>
-          <th>Quantità</th>
-          <th>Note</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><img src="mela.jpg" alt="" class="icon"></td>
-          <td>mela</td>
-          <td>10 €</td>
-          <td>
-            <input type="number" value="0" class="" min="0" id="order_1">
-          </td>
-          <td>
-            <input type="text"  value="" class="" placeholder="Note o variazioni">
-          </td>
-        </tr>
-        <tr>
-          <td><img src="mela.jpg" alt="" class="icon"></td>
-          <td>mela</td>
-          <td>10 €</td>
-          <td>
-            <input type="number" value="0" class="" min="0" id="order_1">
-          </td>
-          <td>
-            <input type="text"  value="" class="" placeholder="Note o variazioni">
-          </td>
-        </tr>
+<div>
+  <ul>
+    <li #Id *ngFor="let listItem of productList" [value]="listItem.Id">
+      {{listItem.Nome}}
+      {{listItem.Descrizione}}
+      {{listItem.Prezzo}}
+      {{listItem.Quantita}}
+      {{listItem.Selected}}
+      <button (click)="aggiungi(listItem.Id)" type="submit">Aggiungi</button>
+    </li>
+  </ul>
 
- 
+</div>
+<div class=carrello>
+  <button  (click)="getSelectList()">Rimuovi selezionati</button>
+  <ul >
+    <li *ngFor="let listItem of selectList" >
+      {{listItem.Nome}}
+      {{listItem.Prezzo}}
+      {{listItem.message}}
+      <button (click)="rimuovi(listItem.Id)" type="submit">Rimuovi</button>
+      <button (click)="annulla(listItem.Id)" type="submit">Annulla Selezione</button>
+    </li>
+  </ul>
+</div>
 
-      </tbody>
-
- 
-
-    </table>
-  </body>
-</html>

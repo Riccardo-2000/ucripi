@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { RegistrazioneComponent } from './registrazione/registrazione.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListaComponent } from './lista/lista.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { ListaComponent } from './lista/lista.component';
     AppComponent,
     HomeComponent,
     RegistrazioneComponent,
-    ListaComponent
+    ListaComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
