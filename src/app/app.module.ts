@@ -12,6 +12,8 @@ import { ContactComponent } from './contact/contact.component';
 import { PesceComponent } from './pesce/pesce.component';
 import { UovaComponent } from './uova/uova.component';
 import { VinoComponent } from './vino/vino.component';
+import { LogInComponent } from './log-in/log-in.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 
 @NgModule({
@@ -25,6 +27,8 @@ import { VinoComponent } from './vino/vino.component';
     PesceComponent,
     UovaComponent,
     VinoComponent,
+    LogInComponent,
+    SignInComponent,
   ],
   imports: [
     BrowserModule,

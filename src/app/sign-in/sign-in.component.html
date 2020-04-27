@@ -1,0 +1,20 @@
+<body>
+
+
+  <div class="login-page">
+
+      <div class="form">
+        <div class="logo">
+          <img class="logo" src="../../assets/logo-listaSpesa.png" alt="logo">
+          <p></p>
+        </div>
+        <form class="login-form"  [formGroup]="signform" (ngSubmit)="onSubmit(signform.value)">
+          <p></p>
+          <input type="text" placeholder="username" id="username"  required formControlName="username"/>
+          <input type="password" placeholder="password" id="password"  required formControlName="password"/>
+          <button type="submit">REGISTRATI</button>
+        </form>
+      </div>
+    </div>
+
+  </body>
