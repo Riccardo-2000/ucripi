@@ -1,44 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-</head>
-<body>  
-
+<div class="login-page">
  
-
-  <div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a><button (click)="registrati()">Registrati</button></a>
-    <a href="#contact">Contact</a>
-    <div class="login-container">
-      <form >
-        <input type="text" #username placeholder="Username">
-        <input type="password" #password placeholder="Password">
-        <button (click)="login(username.value, password.value)">Login</button>
-      </form>
+  <div class="form">
+    <div class="logo">
+      <img class="logo" src="../../assets/logo-listaSpesa.png" alt="logo">
+      <p></p>
     </div>
+    <form class="login-form"  >
+      <p></p>
+      <input type="text" placeholder="username" #username  required formControlName="username"/>
+      <input type="password" placeholder="password" #password required formControlName="password"/>
+      <button (click)="login(username.value, password.value)">ACCEDI</button>
+      <button (click)="registrati()">REGISTRATI</button>
+      
+    </form>
   </div>
-
- 
-
-  <br>
-
- 
-
-  <div style="width:100%;height:100%;">
-    <img src="/assets/immagini/Img_Logo.jpg" alt="Logo" style="float:left;width:20%;height:100%;object-fit:cover;">
-  </div>
-  <br>
-
- 
-
-<div style="width:100%;height:100%;">
-  <img src="/assets/immagini/sfondo.jpg" alt="Sfondo" style="float:left;width:100%;height:100%;object-fit:cover;">
 </div>
-
- 
-
-</body>
-</html>

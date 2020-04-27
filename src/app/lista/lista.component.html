@@ -1,26 +1,93 @@
-<div>
-  <ul>
-    <li #Id *ngFor="let listItem of productList" [value]="listItem.Id">
-      {{listItem.Nome}}
-      {{listItem.Descrizione}}
-      {{listItem.Prezzo}}
-      {{listItem.Quantita}}
-      {{listItem.Selected}}
-      <button (click)="aggiungi(listItem.Id)" type="submit">Aggiungi</button>
-    </li>
-  </ul>
+<div class="caratteristiche">
+	<div id="header">
+		<a href="/home" class="logo">
+			<img class="logo" src="../../assets/logo-listaSpesa.png" alt="">
+		</a>
 
-</div>
-<div class=carrello>
-  <button  (click)="getSelectList()">Rimuovi selezionati</button>
-  <ul >
-    <li *ngFor="let listItem of selectList" >
-      {{listItem.Nome}}
-      {{listItem.Prezzo}}
-      {{listItem.message}}
-      <button (click)="rimuovi(listItem.Id)" type="submit">Rimuovi</button>
-      <button (click)="annulla(listItem.Id)" type="submit">Annulla Selezione</button>
-    </li>
-  </ul>
-</div>
+		<ul id="navigation">
+			<li>
+				<a href="/home">home</a>
+			</li>
+			<li class="selected">
+				<a href="/lista">lista</a>
+			</li>
+			<li>
+				<a href="/blog">blog</a>
+			</li>
+			<li>
+				<a href="/contact">contact</a>
+			</li>
+		</ul>
+	</div>
 
+	<div id="body">
+		<h1><span>Lista della spesa</span></h1>
+	</div>
+
+	<br>
+	<!--<div id="body">
+		<h4><span>Frutta:</span></h4>
+	</div>-->
+
+	<table class="prodotti">
+
+
+		<tr align="center" #Id *ngFor="let listItem of productList">
+			<th>
+				<div id="body">
+					<h3><span> <img src="{{listItem.Image}}"> <br> {{listItem.Nome}}</span></h3>
+				</div>
+			</th>
+			<th>
+				<div id="body">PREZZO: {{listItem.Prezzo}} €</div>
+			</th>
+			<td><input #Quantita type="number" value="1" placeholder={{listItem.Quantita}} class="" min="0"
+					id="order_1"></td>
+			<td><a class="square_btn" (click)="aggiungi(listItem.Id, Quantita.value)" type="submit"> <img
+						class="carrelloAggiungi" src="../../assets/immagini-icons/icon-carrello.png" alt="">AGGIUNGI</a>
+			</td>
+
+		</tr>
+		<!-- FINE PRIMA RIGA PRODOTTI -->
+
+	</table>
+
+	<div class=carrello>
+		<p>I TUOI ACQUISTI</p>
+		<ul>
+			<li *ngFor="let listItem of selectList">
+				<div class="elemento">
+					{{listItem.Nome}}
+					{{listItem.Quantita}}pz
+					{{listItem.message}}
+				</div>
+
+				<button (click)="rimuovi(listItem.Id)" type="submit">Rimuovi</button>
+				<button (click)="annulla(listItem.Id)" type="submit">Annulla Selezione</button>
+			</li>
+		</ul>
+		<button (click)="getSelectList()">Rimuovi selezionati</button>
+	</div>
+
+	<br><br>
+
+	<div id="footer">
+		<div>
+			<p>&copy; 2023 by UcripiMarket. All rights reserved.</p>
+			<ul>
+				<li>
+					<a href="https://twitter.com/explore" id="twitter">twitter</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/" id="facebook">facebook</a>
+				</li>
+				<li>
+					<a href="https://myaccount.google.com/?tab=kk" id="googleplus">google plus</a>
+				</li>
+				<li>
+					<a href="https://www.pinterest.it/" id="pinterest">pinterest</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

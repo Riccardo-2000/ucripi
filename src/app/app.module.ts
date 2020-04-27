@@ -8,6 +8,11 @@ import { RegistrazioneComponent } from './registrazione/registrazione.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListaComponent } from './lista/lista.component';
 import { LoginComponent } from './login/login.component';
+import { BlogComponent } from './blog/blog.component';
+import { ContactComponent } from './contact/contact.component';
+import { PesceComponent } from './pesce/pesce.component';
+import { UovaComponent } from './uova/uova.component';
+import { VinoComponent } from './vino/vino.component';
 
 
 @NgModule({
@@ -16,7 +21,12 @@ import { LoginComponent } from './login/login.component';
     HomeComponent,
     RegistrazioneComponent,
     ListaComponent,
-    LoginComponent
+    LoginComponent,
+    BlogComponent,
+    ContactComponent,
+    PesceComponent,
+    UovaComponent,
+    VinoComponent
   ],
   imports: [
     BrowserModule,

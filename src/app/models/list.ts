@@ -1,7 +1,7 @@
 export interface ListItem{
     Id :number;
+    Image: string;
     Nome:string;
-    Descrizione:string;
     Prezzo:number;
     Quantita: number;
     Selected: boolean;
