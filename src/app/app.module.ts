@@ -13,7 +13,7 @@ import { PesceComponent } from './pesce/pesce.component';
 import { UovaComponent } from './uova/uova.component';
 import { VinoComponent } from './vino/vino.component';
 import { LogInComponent } from './log-in/log-in.component';
-import { SignInComponent } from './sign-in/sign-in.component';
+
 
 
 @NgModule({
@@ -28,7 +28,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
     UovaComponent,
     VinoComponent,
     LogInComponent,
-    SignInComponent,
+  
   ],
   imports: [
     BrowserModule,
