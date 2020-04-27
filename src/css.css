@@ -444,7 +444,7 @@ p a:hover {
 	width: 44px;
 }
 #footer div ul li a {
-	/*background: url("../../assets/icons.jpg") no-repeat 0 0;*/
+	background: url("/../assets/immagini/icons.jpg") no-repeat 0 0;
 	display: block;
 	height: 44px;
 	margin: 0;
