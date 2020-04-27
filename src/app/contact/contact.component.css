@@ -1,26 +1,8 @@
-
-/*@font-face {
-	font-family: 'poller_oneregular';
-	src: url('../fonts/pollerone/pollerone-webfont.eot');
-	src: url('../fonts/pollerone/pollerone-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/pollerone/pollerone-webfont.woff') format('woff'),
-		 url('../fonts/pollerone/pollerone-webfont.ttf') format('truetype'),
-		 url('../fonts/pollerone/pollerone-webfont.svg#poller_oneregular') format('svg');
-}
-@font-face {
-	font-family: 'leckerli_oneregular';
-	src: url('../fonts/leckerlione/leckerlione-regular-webfont.eot');
-	src: url('../fonts/leckerlione/leckerlione-regular-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/leckerlione/leckerlione-regular-webfont.woff') format('woff'),
-		 url('../fonts/leckerlione/leckerlione-regular-webfont.ttf') format('truetype'),
-		 url('../fonts/leckerlione/leckerlione-regular-webfont.svg#leckerli_oneregular') format('svg');
-}*/
-
 /*Colore Verde: #96C866 */
 /*Colore Rosso: #F47F83 */
 /*Colore Nero: #444853 */
 
-.contact {
+.caratteristiche {
 	background: #ECF2E6;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
@@ -44,17 +26,9 @@ img.blog{
 }
 
 /*--------------------Pagina Blog------------------------*/
-
 h2.blog{
 	color:#F47F83;
 }
-/*
-p.blog{
-	color: Black;
-	text-align: left;
-}
-*/
-
 /*--------------------Fine Pagina Blog------------------------*/
 
 p {
@@ -130,7 +104,7 @@ p a:hover {
 #body h1 {
 	color: #fff;
 	display: inline;
-	font-family: poller_oneregular;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 35px;
 	font-weight: normal;
 	margin: 0;
@@ -149,7 +123,7 @@ p a:hover {
 #body h3 {
 	color: #fff;
 	display: inline;
-	font-family: poller_oneregular;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15px;
 	font-weight: normal;
 	margin: 0;
@@ -183,7 +157,7 @@ p a:hover {
 	width: 560px;
 }
 #body > div .article h2 {
-	font-family: "Arial Black", Gadget, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 25px;
 	font-weight: normal;
 	margin: 0 0 30px;
@@ -198,7 +172,7 @@ p a:hover {
 	background: Black;
 	color: #fff;
 	display: inline-block;
-	font-family: "Arial Black", Gadget, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 25px;
 	font-weight: normal;
 	margin: 0 0 30px;
@@ -245,7 +219,7 @@ p a:hover {
 }
 #body div ul li div h3 {
 	color: black;
-	font-family: "Arial Black", Gadget, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 25px;
 	font-weight: normal;
 	margin: 0;
@@ -261,7 +235,7 @@ p a:hover {
 	background: #444853;
 	color: #fff;
 	display: inline-block;
-	font-family: "Arial Black", Gadget, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 18px;
 	font-weight: normal;
 	margin: 0;
@@ -308,7 +282,7 @@ p a:hover {
 	background: #F47F83;
 	color: #444853;
 	display: inline-block;
-	font-family: poller_oneregular;
+	font-family: Arial black, Helvetica, sans-serif;
 	font-size: 20px;
 	font-weight: normal;
 	margin: 0 0 18px;
@@ -360,7 +334,7 @@ p a:hover {
 #body > ul li a {
 	color: #000;
 	display: block;
-	font-family: poller_oneregular;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 20px;
 	font-weight: normal;
 	margin: 0;
@@ -415,7 +389,7 @@ p a:hover {
 	border: 0px;
 	background: #444853;
 	color: #fff;
-	font-family: "Arial Black", Gadget, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15px;
 	font-weight: normal;
 	display: inline-block;
@@ -523,7 +497,7 @@ img.blogPost{
 		background: #F47F83;
 		color: #fff;
 
-		font-family: "Arial Black", Gadget, sans-serif;
+		font-family: Arial, Helvetica, sans-serif;
     /*background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
     background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);*/
     transition: .4s;
